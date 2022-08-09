@@ -3,7 +3,7 @@ module.exports = {
   preset: 'ts-jest',
   testEnvironment: 'node',
   coverageDirectory: 'coverage',
-  collectCoverageFrom: ['src/**/*.{js,ts}'],
+  collectCoverageFrom: ['src/**/*.{js,ts}', '!src/mocks/**'],
   coverageThreshold: {
     global: {
       branches: 0,
@@ -15,5 +15,6 @@ module.exports = {
   moduleNameMapper: {
     'src/(.*)': '<rootDir>/src/$1'
   },
-  moduleDirectories: ['node_modules', 'src']
+  moduleDirectories: ['node_modules', 'src'],
+  setupFilesAfterEnv: ['<rootDir>/jest.setup.js']
 };
