@@ -1,4 +1,4 @@
-import { Product } from '~/domain/entities';
+import { Product } from '../../../domain/entities';
 import { ProductsRepository } from '../../../repositories';
 
 export class ProductsPostgresRepositoriesMock implements ProductsRepository {
