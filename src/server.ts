@@ -1,12 +1,5 @@
-/* eslint-disable import/first */
-import express from 'express';
-import dotenv from 'dotenv-safe';
+import { app } from './app';
 
-dotenv.config();
-
-import './database/runMigrations';
-
-const app = express();
-const PORT = 3333;
+const PORT = process.env.SERVER_PORT || 3333;
 
 app.listen(PORT, () => console.log(`server is running on port ${PORT}`));
