@@ -24,6 +24,11 @@ module.exports = {
     'import/prefer-default-export': 'off',
     'import/no-default-export': 'error',
     'no-undef': 'off',
+    'no-unused-vars': 'off',
+    'no-useless-constructor': 'off',
+    'no-empty-function': 'off',
+    'lines-between-class-members': 'off',
+    'no-return-assign': 'off',
     'no-use-before-define': [
       'error',
       {
@@ -40,6 +45,9 @@ module.exports = {
         ts: 'never'
       }
     ],
+    '@typescript-eslint/no-unused-vars': 'error',
+    '@typescript-eslint/no-empty-function': 'error',
+    '@typescript-eslint/no-useless-constructor': 'error',
     '@typescript-eslint/explicit-function-return-type': 'off',
     '@typescript-eslint/no-use-before-define': [
       'error',

@@ -6,7 +6,7 @@
   "author": "Hugo <albrechthugo4@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "ts-node-dev src/server.ts -r dotenv/config",
+    "dev": "ts-node-dev src/server.ts",
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
