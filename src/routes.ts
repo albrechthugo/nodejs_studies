@@ -1,7 +1,9 @@
 import { Router, Request, Response } from 'express';
-import { createProductController, findProductByIdController } from './useCases';
+import { createProductController, findProductByIdController, getProductsController } from './useCases';
 
 const router = Router();
+
+router.get('/products', (req: Request, res: Response) => getProductsController.handle(req, res));
 
 router.get('/products/:id', (req: Request<{ id: string }>, res: Response) =>
   findProductByIdController.handle(req, res)

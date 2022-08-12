@@ -15,4 +15,10 @@ export class ProductsPostgresRepositoriesMock implements ProductsRepository {
       resolve(this.products.find(product => product.id === id));
     });
   }
+
+  async getAll(): Promise<Product[]> {
+    return new Promise(resolve => {
+      resolve(this.products);
+    });
+  }
 }
